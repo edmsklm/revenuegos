@@ -1,0 +1,22 @@
+{
+  "name": "go-circulars-lookup",
+  "version": "1.0.0",
+  "description": "Website that scans Google Drive GOs & Circulars and answers prompts from them",
+  "description": "Website that scans a public Google Drive folder of GOs & Circulars and replies to prompts with exact passages",
+  "type": "module",
+  "main": "server.js",
+  "keywords": [
+    "revenue-department",
+    "government-orders",
+    "circulars",
+    "google-drive",
+    "pdf-search",
+    "express"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test-extract": "node scripts/test-extract.js"
