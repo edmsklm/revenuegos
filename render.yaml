@@ -1,0 +1,14 @@
+# Deploy to Render: New -> Blueprint -> pick this repo.
+# Serves the website and the API from one origin.
+services:
+  - type: web
+    name: go-circulars-lookup
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: DRIVE_FOLDER_ID
+        sync: false # set to your Drive folder ID if different from the default
